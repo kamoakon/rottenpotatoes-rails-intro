@@ -11,7 +11,9 @@ class MoviesController < ApplicationController
   end
 
   def index
+   
     @movies = Movie.all
+    @all_ratings =['G','PG','PG-13','R']
   end
 
   def new
